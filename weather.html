@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather</title>
-    <style>
-      body {
-        background-color: aliceblue;
-      }
-    </style>
-  </head>
-  <body>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/33d45n112d07/phoenix/?unit=us" data-label_1="PHOENIX" data-label_2="WEATHER" data-theme="original">PHOENIX WEATHER</a>
-    <script>
-      ! function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (!d.getElementById(id)) {
-          js = d.createElement(s);
-          js.id = id;
-          js.src = 'https://weatherwidget.io/js/widget.min.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }
-      }(document, 'script', 'weatherwidget-io-js');
-    </script>
-  </body>
-</html>
+<a class="weatherwidget-io" href="https://forecast7.com/en/33d45n112d07/phoenix/?unit=us" data-label_1="PHOENIX" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one">PHOENIX WEATHER</a>
+<script>
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://weatherwidget.io/js/widget.min.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'weatherwidget-io-js');
+</script>
