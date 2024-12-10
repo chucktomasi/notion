@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+		initial-scale=1.0" />
+    <title>Day of the week</title>
+  </head>
+  <style>
+    p {
+      font-size: 3vw;
+      border: 1px black solid;
+      text-align: center;
+      padding: 10px;
+      font-family: 'Helvetica';
+      width: 100%;
+      /* margin: 100px; */
+      text-align: center;
+      border-radius: 20px;
+      background-color: black;
+      color: limegreen;
+    }
+  </style>
+  <body>
+    <p id="current-day"></p>
+    <script>
+      const d = new Date();
+      const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      let day = d.getDay()
+      document.getElementById("current-day").innerHTML = 'Today is ' + weekday[day];
+    </script>
+  </body>
+</html>
