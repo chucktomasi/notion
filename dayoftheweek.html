@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width,
 		initial-scale=1.0" />
     <title>Day of the week</title>
-  </head>
   <style>
-    p {
-      font-size: 3vw;
+    .day {
+      font-size: 5vw;
       border: 1px black solid;
       text-align: center;
-      padding: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       font-family: 'Helvetica';
-      width: 99%;
+      width: 100%;
       /* margin: 100px; */
       text-align: center;
-      border-radius: 20px;
+      border-radius: 10px;
       background-color: black;
       color: limegreen;
     }
   </style>
+  </head>
   <body>
-    <p id="current-day"></p>
+    <div id="day" class="day"></div>
     <script>
       const d = new Date();
       const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       let day = d.getDay()
-      document.getElementById("current-day").innerHTML = 'Today is ' + weekday[day];
+      document.getElementById("day").innerHTML = 'Today is ' + weekday[day];
     </script>
   </body>
 </html>
